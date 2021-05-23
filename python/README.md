@@ -77,6 +77,6 @@ There are display options to help refine what is produced:
 >>> db.visualize(apple, 'apple.dot', [4, 1, 5], exclude_node_keys=['type'], hide_edge_key=True)
 ```
 
-![More refined visualization](apple.png)
+![More refined visualization](apple.dot.png)
 
 The resulting dot file can be edited further as needed; the [dot guide](https://graphviz.org/pdf/dotguide.pdf) has more options and examples.
