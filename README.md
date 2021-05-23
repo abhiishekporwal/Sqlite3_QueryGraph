@@ -3,7 +3,7 @@
 ### Task:
 Given an image create a Directed Graph and Query it in a graph database.
 
-[image](Snippets/image.png)
+![image](Snippets/image.png)
 
 On this try to query for :
 
@@ -60,5 +60,5 @@ This is the [Python](https://www.python.org/) implementation.
 
 ![Result for n step](Snippets/n_step_nodes.png)
 
-For full solution refer to [notebook](python/Graph.ipynb)
+For full solution refer to ![notebook](python/Graph.ipynb)
 
