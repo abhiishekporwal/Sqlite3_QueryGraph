@@ -3,12 +3,13 @@
 ### Task:
 Given an image create a Directed Graph and Query it in a graph database.
 
+[image](Snippets/image.png)
+
 On this try to query for :
 
 A. All vertices you can reach in one step from A, D, E
 
 B. All vertices you can reach in two steps from I
-
 
 ### Dependencies:
 * SQLite3
@@ -28,7 +29,6 @@ B. All vertices you can reach in two steps from I
 The [database script](python/database.py) provides convenience functions for [atomic transactions](https://en.wikipedia.org/wiki/Atomicity_(database_systems)) to add, delete, connect, and search for nodes.
 
 Any single node or path of nodes can also be depicted graphically by using the `visualize` function within the database script to generate [dot](https://graphviz.org/doc/info/lang.html) files, which in turn can be converted to images with Graphviz.
-
 
 ### Approach:
 
@@ -60,5 +60,5 @@ This is the [Python](https://www.python.org/) implementation.
 
 ![Result for n step](Snippets/n_step_nodes.png)
 
-For full solution refer to python/Graph.ipynb
+For full solution refer to [notebook](python/Graph.ipynb)
 
