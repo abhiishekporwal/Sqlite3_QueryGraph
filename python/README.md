@@ -1,23 +1,4 @@
-# About
-
-This is the [Python](https://www.python.org/) implementation.
-
-# Usage
-
-## Installation
-
-* [SQLite](https://www.sqlite.org/), version 3.31.0 or higher; get the latest source or precompiled binaries from the [SQLite Download Page](https://www.sqlite.org/download.html) 
-* [Python](https://www.python.org/)
-* [Graphviz](https://graphviz.org/) for visualization
-  -  install ([download page](https://www.graphviz.org/download/), [installation procedure for Windows](https://forum.graphviz.org/t/new-simplified-installation-procedure-on-windows/224)); and
-  - `pip install graphviz`
-
-## Basic Functions
-
-The [database script](database.py) provides convenience functions for [atomic transactions](https://en.wikipedia.org/wiki/Atomicity_(database_systems)) to add, delete, connect, and search for nodes.
-
-Any single node or path of nodes can also be depicted graphically by using the `visualize` function within the database script to generate [dot](https://graphviz.org/doc/info/lang.html) files, which in turn can be converted to images with Graphviz. 
-
+ 
 ## Testing
 
 There will be more robust and dedicated unit tests with [pytest](https://docs.pytest.org/en/latest/) soon, but in the meantime, running the example locally will do in a pinch.
@@ -88,7 +69,7 @@ The resulting text file also comes with an associated image (the default is [png
 
 The default options include every key/value pair (excluding the id) in the node and edge objects:
 
-![Basic visualization](.examples/apple-raw.png)
+![Basic visualization](apple-raw.png)
 
 There are display options to help refine what is produced:
 
@@ -96,6 +77,6 @@ There are display options to help refine what is produced:
 >>> db.visualize(apple, 'apple.dot', [4, 1, 5], exclude_node_keys=['type'], hide_edge_key=True)
 ```
 
-![More refined visualization](.examples/apple.png)
+![More refined visualization](apple.png)
 
 The resulting dot file can be edited further as needed; the [dot guide](https://graphviz.org/pdf/dotguide.pdf) has more options and examples.
